@@ -1,0 +1,121 @@
+body{
+    background-color:rgb(176, 242, 176) ;
+}
+
+p{
+    font-size:38px;
+    margin-left:350px;
+}
+
+.name{
+    font-size:26px;
+    margin-left:450px;
+}
+
+.phno{
+    font-size:26px;
+    margin-left:450px;
+}
+
+.mail{
+    font-size:26px;
+    margin-left:450px;
+}
+
+.address{
+    font-size:26px;
+    margin-left:450px;
+}
+
+.soil{
+    font-size:26px;
+    margin-left:450px;
+}
+
+.crop{
+    font-size:26px;
+    margin-left:450px;
+}
+
+.pl{
+    font-size:26px;
+    margin-left:450px;
+}
+
+.amt{
+    font-size:26px;
+    margin-left:450px;
+}
+
+.area{
+    font-size:26px;
+    margin-left:450px;
+}
+
+.pll{
+    font-size:26px;
+}
+
+.name input{
+    padding:5px 10px;
+    width:200px;
+    margin-left:110px;
+}
+
+.phno input{
+    padding:5px 10px;
+    width:200px;
+    margin-left:20px;
+}
+
+.mail input{
+    padding:5px 10px;
+    width:200px;
+    margin-left:75px;
+}
+
+.address textarea{
+    width:300px;
+    height:100px;
+    vertical-align: top;
+    margin-left: 85px;
+}
+
+.soil select{
+    padding:5px 10px;
+    width:200px;
+    margin-left:80px;
+}
+
+
+.crop input{
+    padding:1px 1px;
+    width:200px;
+    margin-left:122px;
+    font-size:20px;
+}
+
+.pl input{
+    margin-left:650px;
+}
+
+.amt input{
+    padding:5px 10px;
+    width:200px;
+    margin-left:100px;
+} 
+
+.area input{
+    padding:5px 10px;
+    width:200px;
+    margin-left:135px;
+}
+
+button{
+    font-size:24px;
+    padding:10px 10px;
+    margin-left:600px;
+    border-radius:10px;
+    background-color: rgb(247, 13, 13);
+    color:white;
+}

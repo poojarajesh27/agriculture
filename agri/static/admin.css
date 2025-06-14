@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(176, 242, 176) ;
+}
+
+.a{
+    font-size:38px;
+    font-weight:bold;
+    margin-left:450px;
+}
+
+label{
+    font-size:28px;
+    margin-left:400px;
+}
+
+input{
+    font-size:20px;
+    width:300px;
+    margin-left:20px;
+}
+
+button{
+    margin-left:600px;
+    font-size:24px;
+    padding:10px 10px;
+    border-radius:10px;
+    background-color: grey;
+}
+
+.c{
+    font-size:36px;
+    margin-left:350px;
+}

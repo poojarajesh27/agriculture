@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>admin</title>
+        <link rel="stylesheet" href="../static/admin.css">
+    </head>
+    <body>
+        <p class="a"><strong>🔑Only for Admin🔑</strong></p>
+        <form action="/admin" method="post">
+            <label for="admin" >Enter Name :</label>
+            <input type="text" id="admin" name="name" placeholder="guna" required><br>
+
+            <br><label for="pass" >Enter password :</label>
+            <input type="password" id="pass" name="password" placeholder="********" minlength="8" required>
+
+            <br> <br>
+
+            <br><button>
+                submit
+            </button>
+        </form>
+
+        <p class="c">{{message}}</p>
+    </body>
+</html>

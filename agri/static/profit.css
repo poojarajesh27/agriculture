@@ -1,0 +1,36 @@
+body{
+     background-color:rgb(176, 242, 176) ;
+}
+
+.a{
+    font-size:38px;
+    margin-left:380px;
+}
+
+.b{
+    font-size:38px;
+    margin-left:500px;
+}
+
+label{
+    font-size:26px;
+    margin-left:200px;
+}
+
+input{
+    font-size:20px;
+    margin-left:20px;
+    padding:10px 10px;
+    width:600px;
+}
+
+button{
+    background-color:black ;
+    padding:10px 15px;
+    border-radius:5px;
+    margin-left:650px;
+    color: white;
+    font-size:20px;
+    border:2px solid white ;
+}
+

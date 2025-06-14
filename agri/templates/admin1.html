@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>select-table</title>
+        <link rel="stylesheet" href="../static/admin1.css">
+    </head>
+    <body>
+        <p class="a">📋select table and query to modify📋</p>
+        <form action="/admin1" method="post" class="b">
+            <label>table:
+                <input list="table" name="table" required>
+            </label>
+
+            <datalist id="table">
+                <option value="crop-select"></option>
+                <option value="crop-detail"></option>
+                <option value="terrace"></option>
+                <option value="customer"></option>
+                <option value="query"></option>
+            </datalist><br>
+
+            <br><label>query:
+                <input list="query" name="type" required>
+            </label>
+
+            <datalist id="query">
+                <option value="insert"></option>
+                <option value="update"></option>
+                <option value="delete"></option>
+                <option value="select"></option>
+            </datalist><br>
+
+            <br><label for="query">enter query:</label>
+            <textarea id="query" name="write" placeholder="type your query here..."></textarea><br>
+
+            <br><button>
+                submit
+            </button>
+        </form>
+        
+    </body>
+</html>

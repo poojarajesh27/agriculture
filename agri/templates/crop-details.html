@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>crop details</title>
+        <link rel="stylesheet" href="/static/cropd.css">
+        <style>
+            table{
+                width:90%;
+                margin:auto;
+                border-collapse:collapse ;
+            }
+
+            td{
+                border:1px solid #888;
+                padding:8px;
+                text-align: center;
+                background-color: rgba(226, 235, 226, 0.86);
+                font-size:26px;
+            }
+
+            th{
+                background-color: rgba(5, 43, 17, 0.86);
+                border:1px solid #888;
+                padding:8px;
+                text-align: center;
+                color:white;
+                font-size:26px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p><strong>🌾know more about crops🌾</strong></p>
+        <form action="/crop-details" method="post">
+            <label>select crop :
+                <input list="crops" name="crops" required>
+            </label>
+            <datalist id="crops">
+                <option value="wheat"></option>
+                <option value="rice"></option>
+                <option value="cabbage"></option>
+                <option value="watermelon"></option>
+                <option value="sugarcane"></option>
+                <option value="jute"></option>
+                <option value="tea"></option>
+                <option value="coffee"></option>
+                <option value="cashew"></option>
+                <option value="barley"></option>
+                <option value="bajra"></option>
+                <option value="radish"></option>
+                <option value="carrot"></option>
+                <option value="groundnut"></option>
+                <option value="peanut"></option>
+                <option value="apple"></option>
+                <option value="cardamom"></option>
+                <option value="maize"></option>
+                <option value="tomato"></option>
+                <option value="spinach"></option>
+                <option value="banana"></option>
+                <option value="strawberries"></option>
+                <option value="cotton"></option>
+                <option value="mustard"></option>
+                <option value="soybeans"></option>
+                <option value="millets"></option>
+                <option value="pulses"></option>
+            </datalist>
+            <br>
+            <br><br><button>
+                submit
+            </button>
+        </form>
+        <br><br><br><br><br>
+        <table>
+            <thead>
+                <tr>
+                    {% for col in columns %}
+                        <th>{{ col }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                    <tr>
+                        {% for col in columns %}
+                            <td>{{ row[col] }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    </body>
+</html>

@@ -1,0 +1,118 @@
+body{
+     background-color:rgb(176, 242, 176) ;
+}
+
+p{
+    font-size:38px;
+    margin-left:500px;
+}
+
+label{
+    font-size:28px;
+    margin-left:300px;
+}
+
+.a{
+    width:500px;
+    font-size:15px;
+    margin-left:120px;
+    padding:10px 10px;
+}
+
+.b{
+    width:500px;
+    font-size:15px;
+    margin-left:20px;
+    padding:10px 10px;
+}
+
+.c{
+    display:inline-block;
+    width:400px;
+    height:100px;
+    font-size:15px;
+    margin-left:25px;
+    vertical-align:top;
+}
+
+button{
+    font-size:24px;
+    padding:20px 30px;
+    margin-left:50px;
+    background-color: brown;
+    color:white;
+    border-radius:15px;
+    display: inline-block;
+}
+
+.contact{
+    margin-left:450px;
+}
+
+.number{
+    width:420px;
+    border-style: solid ;
+    border-color:black;
+    border-radius: 2px;
+    border-width: 2px;
+    padding:10px 10px;
+    margin:2px 2px;
+    display:inline-block;
+    margin-left:200px;
+}
+.num{
+    font-size:26px;
+    width:450px;
+    margin-left:0px;
+    color:brown;
+    font-weight: bold;
+}
+
+.mail{
+    width:400px;
+    border-style: solid ;
+    border-color:black;
+    border-radius: 2px;
+    border-width: 2px;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    display:inline-block;
+    margin-left:50px;
+}
+.id{
+    font-size:26px;
+    width:450px;
+    margin-left:0px;
+    color:brown;
+    font-weight: bold;
+}
+
+.icons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:500px;
+    margin-right:500px;
+}
+
+.insta img{
+    height:40px;
+    border-radius: 50%;
+}
+
+.face img{
+    height:40px;
+    border-radius: 50%;
+}
+
+.lin img{
+    height:40px;
+    border-radius: 50%;
+}
+
+.tweet img{
+    height:40px;
+    border-radius: 50%;
+}

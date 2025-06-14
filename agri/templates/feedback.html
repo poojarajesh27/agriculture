@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>feedback</title>
+        <link rel="stylesheet" href="../static/feedback.css">
+    </head>
+    <body>
+        <p><strong>📝kindly fill the below details📝</strong></p>
+        <form action="/feedback" method="post">
+
+            <label class="name">
+                Name :
+                <input type="text" name="name" placeholder="guna" required>
+            </label><br>
+
+            <br><label class="phno">
+                phone number :
+                <input type="number" name="phno" placeholder="1234567890" required>
+            </label><br>
+
+            <br><label class="mail">
+                Email ID :
+                <input type="email" name="mail" placeholder="guna123@gmail.com">
+            </label><br>
+
+            <br><label class="address">
+                Address :
+                <textarea name="address" placeholder="door no, street, city, state, country.. " required></textarea>
+            </label><br>
+
+            <br><label class="soil">soil type : 
+                <select name="soil" required>
+                     <option value="sandy soil">sandy soil</option>
+                    <option value="clay soil">clay soil</option>
+                    <option value="saline soil">saline soil</option>
+                    <option value="peaty soil">peaty soil</option>
+                    <option value="alkaline soil">alkaline soil</option>
+                    <option value="alluvial soil">alluvial soil</option>
+                    <option value="loamy soil">loamy soil</option>
+                    <option value="black soil">black soil</option>
+                    <option value="red soil">red soil</option>
+                    <option value="laterite soil">laterite soil</option>
+                    <option value="mountain soil">mountain soil</option>
+                    <option value="silt soil">silt soil</option>
+                    <option value="desert soil">desert soil</option>
+                    <option value="marshy soil">marshy soil</option>
+                </select>
+            </label><br>
+
+            <br><label class="crop">
+                crop :
+                <input list="crops" name="crops" class="crop" required>
+            </label>
+            <datalist id="crops" class="soil">
+               <option value="wheat"></option>
+                <option value="rice"></option>
+                <option value="cabbage"></option>
+                <option value="watermelon"></option>
+                <option value="sugarcane"></option>
+                <option value="jute"></option>
+                <option value="tea"></option>
+                <option value="coffee"></option>
+                <option value="cashew"></option>
+                <option value="barley"></option>
+                <option value="bajra"></option>
+                <option value="radish"></option>
+                <option value="carrot"></option>
+                <option value="groundnut"></option>
+                <option value="peanut"></option>
+                <option value="apple"></option>
+                <option value="cardamom"></option>
+                <option value="maize"></option>
+                <option value="tomato"></option>
+                <option value="spinach"></option>
+                <option value="banana"></option>
+                <option value="strawberries"></option>
+                <option value="cotton"></option>
+                <option value="mustard"></option>
+                <option value="soybeans"></option>
+                <option value="millets"></option>
+                <option value="pulses"></option>
+            </datalist><br>
+
+            <br><label for="pl" class="pl">
+                profit / loss :
+                <br><input type="radio" id="profit" name="pl" value="profit" class="pl" required>
+                <label for="profit" class="pll">profit</label><br>
+
+                <input type="radio" id="loss" name="pl" value="loss" class="pl">
+                <label for="loss" class="pll">loss</label><br>
+            </label>
+
+            <br><label class="amt">
+                amount :
+                <input type="text" name="amount" placeholder="00000.00" required>
+            </label><br>
+
+            <br><label class="area">
+                area :
+                <input type="text" name="area" placeholder="1 sq.ft">
+            </label><br>
+            <br>
+            <br><button>
+                submit
+            </button>
+
+        </form>
+    </body>
+</html>

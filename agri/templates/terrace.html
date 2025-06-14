@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>teracce garden</title>
+        <link rel="stylesheet" href="/static/terrace.css">
+    </head>
+    <body>
+        <form action="/terrace" method="post">
+            <p class="heading">🌿TERRACE GARDENING🌿</p>
+            <p class="sub">choose type of crop :</p>
+            <input type="radio" id="leafy" name="crop" value="leafy greens">
+            <label for="leafy">Leafy Greens</label><br>
+            
+            <input type="radio" id="veggie" name="crop" value="fruiting veg">
+            <label for="veggie">Fruiting Vegetables</label><br>
+
+            <input type="radio" id="root" name="crop" value="root vegetables">
+            <label for="root">Root Vegetables</label><br>
+
+            <input type="radio" id="climber" name="crop" value="climbers & creepers">
+            <label for="climber">Climbers and Creepers</label><br>
+
+            <input type="radio" id="fruits" name="crop" value="fruits">
+            <label for="fruits">Small Fruits</label><br>
+
+            <input type="radio" id="herbs" name="crop" value="herbs">
+            <label for="herbs">Herbs</label><br>
+
+            <br><button>
+                submit
+            </button>
+        </form>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    {% for col in columns %}
+                        <th>{{ col }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                    <tr>
+                        {% for col in columns %}
+                            <td>{{ row[col] }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>
